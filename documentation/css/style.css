@@ -1,0 +1,61 @@
+body
+{
+	padding-top: 60px;
+}
+
+.step, .demo
+{
+	margin-bottom: 20px;
+	min-height: 80px;
+}
+
+	.demo .image
+	{
+		height: 70px;
+		width: 100%;
+		box-shadow: 0 0 5px #aaa;
+		border: 2px solid #fff;
+		
+		background-size: 100% auto;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		right: 0;
+		cursor: pointer;
+	}
+		
+		.demo .image:after
+		{
+			content: "Mouse Over For Example";
+			position: absolute;
+			bottom: 5px;
+			left: 15%;
+			width: 70%;
+			text-align: center;
+			background: rgba(0,0,0,0.2);
+			border-radius: 10px;
+			color: #fff;
+			display: block;
+		}
+			
+			.demo .image:hover:after
+			{
+				content: "";
+			}
+		
+		.demo .image:hover
+		{
+			z-index: 2;
+			height: auto;
+		}
+		
+			.demo .image:hover img
+			{
+				opacity: 1;
+			}
+		
+		.demo .image img
+		{
+			width: 100%;
+			opacity: 0.4;
+		}

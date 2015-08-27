@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MoreGamers - Adobe AIR SDK Documentation</title>
+		
+		<!-- jQuery -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- Custom -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="http://app.moregamers.com" target="_blank">MoreGamers</a>
+			</div>
+			<div class="container">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Installation</a></li>
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Reference <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="reference.initialize.html">void MoreGamers.initialize();</a></li>
+							<li><a href="reference.banner.html">void MoreGamers.banner();</a></li>
+							<li><a href="reference.removeBanner.html">void MoreGamers.removeBanner();</a></li>
+						</ul>
+					</li>
+					<li><a href="changelog.html">Changelog</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<div class="panel panel-default">
+				<div class="panel-heading"><h4>MoreGamers.banner(target:DisplayObjectContainer, x:Number, y:Number, width:Number, height:Number);</h4></div>
+				<div class="panel-body">
+					Add a MoreGamers banner to the display.
+				</div>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading"><h4>Parameters</h4></div>
+				<div class="panel-body">
+					<dt>target</dt>
+					<dd>The parent object that you would call addChild() on.</dd>
+					
+					<dt>x</dt>
+					<dd>The x position of the banner relative to target.</dd>
+
+					<dt>y</dt>
+					<dd>The y position of the banner relative to the target</dd>
+
+					<dt>width</dt>
+					<dd>The width of the banner area</dd>
+
+					<dt>height</dt>
+					<dd>The height of the banner area</dd>
+				</div>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading"><h4>Examples</h4></div>
+				<div class="panel-body">
+					<pre>MoreGamers.banner(stage, 0, 0, 525, 145);</pre>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
